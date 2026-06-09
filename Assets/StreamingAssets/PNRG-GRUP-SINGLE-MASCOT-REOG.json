@@ -1,0 +1,92 @@
+{
+  "1": {
+    "inputs": {
+      "images": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "2": {
+    "inputs": {
+      "filename_prefix": "Grok",
+      "images": [
+        "3",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "3": {
+    "inputs": {
+      "prompt": [
+        "7",
+        0
+      ],
+      "model": "grok-imagine-image-quality",
+      "model.resolution": "2K",
+      "model.number_of_images": 1,
+      "model.aspect_ratio": "auto",
+      "seed": 1053780593,
+      "model.images.image_1": [
+        "5",
+        0
+      ],
+      "model.images.image_2": [
+        "6",
+        0
+      ],
+      "model.images.image_3": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "GrokImageEditNodeV2",
+    "_meta": {
+      "title": "Grok Image Edit"
+    }
+  },
+  "4": {
+    "inputs": {
+      "image": "sample_group_mix.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "5": {
+    "inputs": {
+      "image": "NEWBG_edit.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "6": {
+    "inputs": {
+      "image": "mascot_singo.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "7": {
+    "inputs": {
+      "value": "image_1 as photo background\nimage_2 as mascot, don't make any changes on image_2\nimage_2 as visitors\n\nMake a full body shot group photo of visitors and mascot standing above rounded star logo on the floor. Make the visitors body size is much smaller than mascot. Don't change visitors face and retain all facial features. Place the mascot at the center of group photo. Relight the visitors and mascot with tungsten rim light, following the background color and mood. Make the number of visitors same as the image_3 input, no more and no less. Avoid bare foot on visitors, always make mascot's foot in small size bare foot."
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "Text String (Multiline)"
+    }
+  }
+}

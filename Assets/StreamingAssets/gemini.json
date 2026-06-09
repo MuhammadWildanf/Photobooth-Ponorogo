@@ -1,0 +1,71 @@
+{
+  "4": {
+    "inputs": {
+      "image": "Prabowo_Subianto,_Candidate_for_Indonesia's_President_in_2024.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "5": {
+    "inputs": {
+      "images": ["13", 0]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "6": {
+    "inputs": {
+      "image": "PHE_CHAR_01-edit.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "7": {
+    "inputs": {
+      "direction": "right",
+      "match_image_size": true,
+      "spacing_width": 10,
+      "spacing_color": "white",
+      "image1": ["4", 0],
+      "image2": ["6", 0]
+    },
+    "class_type": "ImageStitch",
+    "_meta": {
+      "title": "Image Stitch"
+    }
+  },
+  "13": {
+    "inputs": {
+      "prompt": "A realistic hand holding a white instant photo frame rotated 15 degree angle against a blurred outdoor background. Inside the photo creates a surreal 3D pop-out effect: a high-quality, Pixar-style 3D animated character is running forward and physically stepping out of the flat photo into the real world. \n\nThe character and polaroid photo frame is 80 percent of total output size.\n\nUse input image_1 as character reference\n\nThe character wears a tan bomber jacket with \"AOC\" written on the chest, a white t-shirt, beige cargo pants, and white sneakers. Front leg and shoe extend past the bottom border of the photo frame, hanging over the hand holding it. \n\nUse input image_2 as outfit reference\n\nThe background inside and outside the photo is a vibrant, 2D stylized futuristic eco-city with green energy towers, solar panels, flying drones, and a bright blue sky with fluffy clouds. Vibrant colors, soft lighting, Octane render, 8k resolution, magical realism.",
+      "model": "gemini-3-pro-image-preview",
+      "seed": 885965962819502,
+      "aspect_ratio": "9:16",
+      "resolution": "1K",
+      "response_modalities": "IMAGE+TEXT",
+      "images": ["7", 0]
+    },
+    "class_type": "GeminiImage2Node",
+    "_meta": {
+      "title": "Nano Banana Pro (Google Gemini Image)"
+    }
+  },
+  "16": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  }
+}

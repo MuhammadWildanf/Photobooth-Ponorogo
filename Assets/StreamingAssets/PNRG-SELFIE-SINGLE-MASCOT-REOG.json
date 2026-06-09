@@ -1,0 +1,92 @@
+{
+  "1": {
+    "inputs": {
+      "images": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "3": {
+    "inputs": {
+      "filename_prefix": "Grok",
+      "images": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "4": {
+    "inputs": {
+      "image": "sample_group_female.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "5": {
+    "inputs": {
+      "prompt": [
+        "6",
+        0
+      ],
+      "model": "grok-imagine-image-quality",
+      "model.resolution": "2K",
+      "model.number_of_images": 1,
+      "model.aspect_ratio": "auto",
+      "seed": 1657450725,
+      "model.images.image_1": [
+        "7",
+        0
+      ],
+      "model.images.image_2": [
+        "8",
+        0
+      ],
+      "model.images.image_3": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "GrokImageEditNodeV2",
+    "_meta": {
+      "title": "Grok Image Edit"
+    }
+  },
+  "6": {
+    "inputs": {
+      "value": "image_1 as photo background with mascot.\nimage_2 as size comparison between mascot and normal human.\nimage_3 as visitor.\n\nMake a casual full body shot group photo of visitor and mascot standing above rounded star logo on the floor. Don't change visitor face and retain all facial feature. Make the visitors body size is much smaller than mascot. Relight visitor and mascot with sharp tungsten rim light, following the background color and mood. Make the number of visitor is just one person, no more and no less. Avoid bare foot on visitors, always make mascot's foot in small size bare foot."
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "Text String (Multiline)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "image": "mascot_big.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "8": {
+    "inputs": {
+      "image": "mascot_singo.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  }
+}

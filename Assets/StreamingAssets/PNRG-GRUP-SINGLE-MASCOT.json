@@ -1,0 +1,92 @@
+{
+  "1": {
+    "inputs": {
+      "images": [
+        "7",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "3": {
+    "inputs": {
+      "image": "NEWBG_edit.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "4": {
+    "inputs": {
+      "image": "mascot_warlock.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "5": {
+    "inputs": {
+      "prompt": [
+        "8",
+        0
+      ],
+      "model": "grok-imagine-image-quality",
+      "model.resolution": "2K",
+      "model.number_of_images": 1,
+      "model.aspect_ratio": "auto",
+      "seed": 1987944808,
+      "model.images.image_1": [
+        "3",
+        0
+      ],
+      "model.images.image_2": [
+        "4",
+        0
+      ],
+      "model.images.image_3": [
+        "7",
+        0
+      ]
+    },
+    "class_type": "GrokImageEditNodeV2",
+    "_meta": {
+      "title": "Grok Image Edit"
+    }
+  },
+  "6": {
+    "inputs": {
+      "filename_prefix": "Grok",
+      "images": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "7": {
+    "inputs": {
+      "image": "sample_group_female.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "8": {
+    "inputs": {
+      "value": "image_1 as photo background.\nimage_2 as mascot, do not make any changes.\nimage_3 as visitors.\n\nMake a full body shot group photo of visitors and mascot standing above rounded star logo on the floor. Don't change visitors face and retain all facial features. Place the mascot at the center of group photo. Adjust the body size proportions of all subjects. Relight the visitors and mascot with tungsten rim light, following the background color and mood. Make the number of visitors same as the input image_3, no more and no less. Avoid bare foot on visitors, but leave mascot bare foot. Match size of visitors bodies proportion with mascot."
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "Text String (Multiline)"
+    }
+  }
+}

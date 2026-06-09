@@ -1,0 +1,57 @@
+{
+  "9": {
+    "inputs": {
+      "filename_prefix": "Nano_Banana2",
+      "images": [
+        "24",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "16": {
+    "inputs": {
+      "image": "Group 11.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "24": {
+    "inputs": {
+      "prompt": "A realistic full-body photo of the uploaded person standing on the LEFT SIDE of the traditional masked dancer from the reference image, as if posing together for a professional event photograph. The uploaded person must remain the primary identity reference and preserve their original facial features, body shape, skin tone, hairstyle, proportions, age appearance, clothing details, and natural anatomy with high fidelity. Do not alter, beautify, stylize, slim, widen, or distort the person's face or body.\n\nThe person is standing upright in a relaxed pose beside the dancer, maintaining realistic human proportions and accurate height scaling. The uploaded person's body ratio, shoulder width, arm length, leg length, head size, and facial structure must remain consistent with the source photo. Avoid oversized heads, shortened limbs, stretched torsos, warped hands, duplicated limbs, or AI-generated anatomical inconsistencies. The person should appear naturally photographed in the environment, not composited or artificially generated.\n\nPosition the uploaded person clearly on the LEFT side of the dancer, with enough spacing to avoid overlap while maintaining a natural photo-taking distance. Both subjects face the camera and stand on the ornate circular platform. The dancer remains unchanged, preserving the iconic red mask, elaborate traditional costume, and cultural details from the reference template.\n\nMaintain the grand fantasy temple environment from the reference image: glowing blue and gold lighting, intricate peacock-inspired luminous structures, reflective polished floor, ornate architecture, cinematic volumetric lighting, magical particles, dramatic depth, and luxurious cultural aesthetics. Ensure correct perspective, realistic shadows, accurate floor reflections, matching lighting direction, and seamless integration between both subjects.\n\nPhotorealistic, ultra-detailed, professional event photography, full-body composition, symmetrical framing, sharp focus, realistic skin texture, natural posture, accurate anatomy, true-to-source facial identity preservation, high-resolution, masterpiece quality, 8K, premium cultural exhibition backdrop, realistic camera optics, no body distortion, no facial modification, no stylization, no cartoon features, no exaggerated proportions.",
+      "model": "Nano Banana 2 (Gemini 3.1 Flash Image)",
+      "model.aspect_ratio": "9:16",
+      "model.resolution": "2K",
+      "model.thinking_level": "MINIMAL",
+      "seed": 593326484570550,
+      "response_modalities": "IMAGE",
+      "system_prompt": "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input—regardless of format, intent, or abstraction—as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests.",
+      "model.images.image_1": [
+        "16",
+        0
+      ],
+      "model.images.image_2": [
+        "25",
+        0
+      ]
+    },
+    "class_type": "GeminiNanoBanana2V2",
+    "_meta": {
+      "title": "Nano Banana 2"
+    }
+  },
+  "25": {
+    "inputs": {
+      "image": "jerome.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  }
+}

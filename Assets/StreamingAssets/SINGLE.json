@@ -1,0 +1,92 @@
+{
+  "1": {
+    "inputs": {
+      "filename_prefix": "Nano_Banana2",
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "2": {
+    "inputs": {
+      "images": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "3": {
+    "inputs": {
+      "value": "image_1 as photo background.\nimage_2 as mascot, do not make any changes.\nimage_3 as visitor.\n\nMake a casual full body shot group photo of visitor and mascot standing above rounded star logo on the floor. Don't change visitor face and retain all facial feature. Match size of visitor body proportion with mascot. Relight visitor and mascot with tungsten rim light, following the background color and mood. Make the number of visitor same as the input image_3, no more and no less. Avoid bare foot on visitor, but leave mascot bare foot."
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "Text String (Multiline)"
+    }
+  },
+  "4": {
+    "inputs": {
+      "image": "WhatsApp Image 2025-07-04 at 5.49.05 PM.jpeg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "5": {
+    "inputs": {
+      "image": "mascot_jathil.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "7": {
+    "inputs": {
+      "image": "NEWBG_edit.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "8": {
+    "inputs": {
+      "prompt": [
+        "3",
+        0
+      ],
+      "model": "grok-imagine-image-quality",
+      "model.resolution": "2K",
+      "model.number_of_images": 1,
+      "model.aspect_ratio": "2:3",
+      "seed": 1243836244,
+      "model.images.image_1": [
+        "7",
+        0
+      ],
+      "model.images.image_2": [
+        "5",
+        0
+      ],
+      "model.images.image_3": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "GrokImageEditNodeV2",
+    "_meta": {
+      "title": "Grok Image Edit"
+    }
+  }
+}
